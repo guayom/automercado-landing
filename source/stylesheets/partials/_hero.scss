@@ -49,12 +49,16 @@
 #hero-text{
   color: #fff;
   h1{
-    font-size: 3.3em;
     margin-bottom: 20px;
     margin-top: 0;
     text-shadow: $main-text-shadow;
     @include media($mobile) {
+      line-height: 0.9em;
+      font-size: 2.8em;
+    }
+    @include media($tablet) {
       line-height: 1em;
+      font-size: 3.3em;
     }
   }
   p{
