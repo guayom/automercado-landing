@@ -27,3 +27,37 @@ footer{
   @include span-columns(6);
   text-align: right;
 }
+#disclaimer{
+  background-color: darken($rojo, 20%);
+  display: inline-block;
+  padding: 20px 0;
+  p{
+    color: #fff;
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  a{
+    color: #fff;
+    font-weight: bold;
+  }
+  div{
+    @include media($tablet) {
+      @include span-columns(8);
+      @include shift(2);
+      @include omega();
+    }
+    @include media($mobile) {
+      @include span-columns(10);
+      @include shift(1);
+      @include omega(2n);
+    }
+  }
+  &:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+   }
+}
