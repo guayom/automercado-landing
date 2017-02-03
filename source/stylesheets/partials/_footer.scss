@@ -1,0 +1,28 @@
+footer{
+  background-image: url(../images/fondo-patron.gif);
+  padding: 30px 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px #B01A1D;
+  max-height: 200px;
+}
+#footer-content{
+  @include outer-container;
+}
+.copyright{
+  text-align: center;
+  font-size: 1.2em;
+  @include media($tablet) {
+    @include span-columns(8);
+    @include shift(2);
+    @include omega();
+  }
+  @include media($mobile) {
+    @include span-columns(10);
+    @include shift(1);
+    @include omega(2n);
+  }
+}
+.footer-last{
+  @include span-columns(6);
+  text-align: right;
+}

@@ -1,0 +1,4 @@
+@mixin mobile-padding($w){
+  padding-left: $w;
+  padding-right: $w;
+}

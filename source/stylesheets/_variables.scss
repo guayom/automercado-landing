@@ -1,0 +1,31 @@
+$main-color: #F45354;
+$verde: #00A651;
+$rojo: #ED1C24;
+
+//Text
+$main-text-shadow: 2px 2px 8px #000000;
+$title-font: 'bryant_probold_alternate';
+$main-font: 'bryant_promedium';
+
+//Spacing
+$mobile-padding: 30px;
+
+
+//Settings de Neat
+@import "neat/neat-helpers";
+//$visual-grid: true;
+
+// phone":        400px,
+// phone-wide":   480px,
+// phablet":      560px,
+// tablet-small": 640px,
+// tablet":       768px,
+// tablet-wide":  1024px,
+// desktop":      1248px,
+// desktop-wide": 1440px
+
+$mobile-breakpoint-value: 480px;
+$tablet-breakpoint-value: 768px;
+//$mobile: new-breakpoint(min-width $mobile-breakpoint-value max-width $tablet-breakpoint-value);
+$mobile: new-breakpoint(max-width $tablet-breakpoint-value);
+$tablet: new-breakpoint(min-width $tablet-breakpoint-value + 1);

@@ -1,0 +1,14 @@
+<section id="hero" style="background-image: url(<%= current_page.data.hero_image %>);">
+  <div id="hero-content">
+    <div id="hero-card">
+      <img src="https://images.contentful.com/9cds0lha1plv/3HbCCp3rfGuQoSuGSgWeke/f85119a127d4582fac51060a8e2680d2/cr-tarjeta-autom-dorada-amex.png" alt="Tarjeta Auto Mercado de Credomatic" />
+    </div>
+    <div id="hero-text">
+      <h1><%= current_page.data.title %></h1>
+      <p><%= current_page.data.hero_p %></p>
+      <a href="<%= current_page.data.cta_link %>" target="_blank" class="button">
+        <%= current_page.data.cta_text %>
+      </a>
+    </div>
+  </div>
+</section>
