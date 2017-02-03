@@ -26,12 +26,14 @@
   @include outer-container;
 }
 #hero-card{
+  text-align: center;
   img{
     max-width: 100%;
     border-radius: 16px;
     -webkit-box-shadow: 3px 2px 5px -1px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 2px 5px -1px rgba(0,0,0,0.6);
     box-shadow: 3px 2px 5px -1px rgba(0,0,0,0.6);
+
   }
   @include media($mobile) {
     @include span-columns(10);
