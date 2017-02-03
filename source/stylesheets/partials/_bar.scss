@@ -20,7 +20,14 @@
 #bar-content{
   @include outer-container;
   @include omega(4n);
+  @include media($computer) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   @include media($mobile) {
+    @include mobile-padding($mobile-padding * 1.5);
+  }
+  @include media($tablet) {
     @include mobile-padding($mobile-padding * 1.5);
   }
   color: #fff;

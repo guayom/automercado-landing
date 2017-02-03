@@ -26,6 +26,8 @@ $mobile-padding: 30px;
 
 $mobile-breakpoint-value: 480px;
 $tablet-breakpoint-value: 768px;
+$computer-breakpoint-value: 1200px;
 //$mobile: new-breakpoint(min-width $mobile-breakpoint-value max-width $tablet-breakpoint-value);
 $mobile: new-breakpoint(max-width $tablet-breakpoint-value);
 $tablet: new-breakpoint(min-width $tablet-breakpoint-value + 1);
+$computer: new-breakpoint(min-width $computer-breakpoint-value + 1);
