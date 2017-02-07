@@ -78,7 +78,7 @@
     border-spacing: 40px;
     border-collapse: separate;
     min-width: 80%;
-  
+  }
   @include media($pdf) {
     width: 100%;
   }
